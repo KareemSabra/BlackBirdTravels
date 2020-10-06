@@ -1,34 +1,28 @@
-﻿<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Black Bird Travels</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>QR Code Scanner</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
   </head>
+
   <body>
-      <header>
-          <nav id="header-nav" class="navbar navbar-default">
-              <div class="container">
-                  <div class="navbar-header">
-                      <a href="index.html" class="pull-left">
-                          <div id="logo-img" alt="Logo"></div>
-                      </a>
-                      <div class="navbar-brand">
-                          <a href="index.html">
-                              <h1>Black Bird Travels</h1>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </nav>
-      </header>
+    <div id="container">
+      <h1>QR Code Scanner</h1>
 
+      <a id="btn-scan-qr">
+        <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg">
+      <a/>
 
-  <script src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+      <canvas hidden="" id="qr-canvas"></canvas>
+
+      <div id="qr-result" hidden="">
+        <b>Data:</b> <span id="outputData"></span>
+      </div>
+    </div>
+
+    <script src="./src/qrCodeScanner.js"></script>
   </body>
 </html>
