@@ -1,0 +1,17 @@
+****Selecting login data after inputed
+
+$sql = "SELECT * FROM `Permissions` WHERE UserName = \'Abdelrahman\' && Password = \'abdelrahman\'";
+
+
+****Adding a new User with permission
+
+$sql = "INSERT INTO `Permissions`(`UserName`, `Password`, `Permission`) VALUES (\'Seif567\',\'567765\',\'driver\')";
+
+****Adding a new Customer
+
+$sql = "INSERT INTO `Customers`(`Name`, `Faculty`, `University`, `ParentNumber`, `MobileNumber`, `Package`, `Pin`) VALUES (\'Seif\',\'CCE\',\'Alex\',\'0121212121\',\'01226077009\',\'full\',\'8888\')";
+
+
+****Searching for pin
+
+$sql = "SELECT * FROM `Customers` WHERE Pin = \'8888\'";

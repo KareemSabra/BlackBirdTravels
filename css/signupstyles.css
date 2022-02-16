@@ -1,0 +1,200 @@
+/*
+Template Name: classic-business-signup-form
+File Name: style.css
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/
+*/
+
+body {
+    text-align: center;
+}
+.content{
+    background: url(../images/banner.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center; 
+}
+textarea:focus, input:focus, select:focus, select:active{
+    outline: none;
+    box-shadow:none;
+}
+.form-control:focus, .form-control:focus{
+    box-shadow: none !important;
+    outline: 0 none !important;
+    border-color:transparent !important;
+}
+.placeholder-fix:focus::-webkit-input-placeholder  {color:transparent !important; }
+.placeholder-fix:focus::-moz-placeholder   {color:transparent !important;}
+.placeholder-fix:-moz-placeholder   {color:transparent !important;}
+
+a{
+    text-decoration: none;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus, select:focus, select:active select:active:focus {outline: none;}
+a,h1,h2,h3,h4,h5{cursor: pointer;}
+a:focus, a:hover{text-decoration: none;}
+a:focus {outline: none; outline-offset: 0;}
+ul{list-style: none;}
+.pl-5{
+    padding-left: 5px !important;
+}
+.pr-5{
+    padding-right: 5px !important;
+}
+.book-form input,.book-form select {
+    border: medium none;
+    border-radius: 0;
+    color: #000 !important;
+    font-weight: 600;
+    height: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding: 10px 8px;
+    width: 75%;
+    font-size: 12px;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.4);
+}
+.logo h1 {
+    color: #fff;
+    letter-spacing: 2px;
+    margin-left: 40px;
+    margin-top: 30px;
+    text-align: left;
+}
+.box{
+    padding: 30px 20px;
+    margin-top: 80px;
+    border-radius: 5px;
+}
+.buttons .btn {
+    background-color: #403055;
+    border: medium none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    height: 60px;
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 100%;
+}
+   
+.book-form input::-moz-placeholder {
+    color: #000;
+    font-weight: 600;
+    opacity: 1;
+    text-transform: capitalize;
+}
+.book-form input::-webkit-input-placeholder{
+    color: #000;
+    font-weight: 600;
+    opacity: 1;
+    text-transform: capitalize;
+}
+
+.form-group select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, #000 50%), linear-gradient(135deg, #000 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 8px), calc(100% - 15px) calc(1em + 8px);
+    background-repeat: no-repeat;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+.title h2 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.book-form span{
+    color: #fff;
+    float: left;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+    vertical-align: middle;
+    width: 25%;
+    text-align: left;
+}
+.book-form .btn {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px;
+    width: 100%;
+    color: #403055;
+    margin-top: 20px;
+}
+    .book-form .btn:hover {
+        background-color: transparent;
+        border-color: #403055;
+        color: #403055;
+    }
+.title {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.para {
+    color: #aaa6a6;
+    font-size: 16px;
+    margin: 10px auto 20px;
+    width: 50%;
+}
+.book-form {
+    margin-top: 40px;
+}
+.copyright {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 40px;
+}
+    .copyright a, .copyright a:hover {
+        color: #403055;
+        text-decoration: none;
+    }
+@media (max-width: 991px){
+    .title {
+        font-size: 26px;
+    }
+    .para {
+        font-size: 14px;
+        margin: 10px auto 0;
+    }
+    .logo h1 {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 767px){
+    .para {
+        font-size: 12px;
+        margin: 10px auto 0;
+        width:80%;
+    }
+}
+@media (max-width: 400px){
+    .book-form span {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .book-form input, .book-form select {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .book-form .btn {
+        margin-top: 10px;
+        font-size: 16px;
+        padding: 8px;
+    }
+    .book-form {
+        margin-top: 30px;
+    }
+    .para {
+        width: 90%;
+    }
+}
